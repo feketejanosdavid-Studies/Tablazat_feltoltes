@@ -1,1 +1,1 @@
-# Sinto Project
+# Táblázat kitöltése a html fájlban

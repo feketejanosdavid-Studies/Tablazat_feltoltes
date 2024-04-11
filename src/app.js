@@ -8,8 +8,22 @@ const employeeArray = [
 
 const empsBody = document.getElementById("empsBody")
 
-employeeArray.forEach( (employee) => {
+var rows = ""
+
+
+employeeArray.forEach( (emp) => {
     console.log(emp.name)
 
-    var row = ``
+    var row = `
+        <tr>
+            <td>${emp.id}</td>
+            <td>${emp.name}</td>
+            <td>${emp.city}</td>
+            <td>${emp.salary}</td>
+        </tr>
+    `
+
+    rows += row
 })
+
+empsBody.innerHTML = rows
